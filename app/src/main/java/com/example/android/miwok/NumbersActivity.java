@@ -31,18 +31,18 @@ public class NumbersActivity extends AppCompatActivity {
         // ArrayList of numbers
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("one", "lutti"));
-        words.add(new Word("two", "lutti"));
-        words.add(new Word("three", "lutti"));
-        words.add(new Word("four", "lutti"));
-        words.add(new Word("five", "lutti"));
-        words.add(new Word("six", "lutti"));
-        words.add(new Word("seven", "lutti"));
-        words.add(new Word("eight", "lutti"));
-        words.add(new Word("nine", "lutti"));
-        words.add(new Word("ten", "lutti"));
+        words.add(new Word("one", "lutti", R.drawable.number_one));
+        words.add(new Word("two", "lutti", R.drawable.number_two));
+        words.add(new Word("three", "lutti", R.drawable.number_three));
+        words.add(new Word("four", "lutti", R.drawable.number_four));
+        words.add(new Word("five", "lutti", R.drawable.number_five));
+        words.add(new Word("six", "lutti", R.drawable.number_six));
+        words.add(new Word("seven", "lutti", R.drawable.number_seven));
+        words.add(new Word("eight", "lutti", R.drawable.number_eight));
+        words.add(new Word("nine", "lutti", R.drawable.number_nine));
+        words.add(new Word("ten", "lutti", R.drawable.number_ten));
 
-        WordAdapter itemsAdapter = new WordAdapter(this, words);
+        WordAdapter itemsAdapter = new WordAdapter(this, words, R.color.category_numbers);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
